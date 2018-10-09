@@ -1,0 +1,1 @@
+Get-WmiObject Win32_PNPEntity | Where-Object{$_.ConfigManagerErrorCode -ne 0} | Select Name, DeviceID | Export-CSV C:\Users\dllatass\Documents
